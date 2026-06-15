@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girmachew Mulugeta | Portfolio</title>
+    <style>
+        /* ማራኪ እና ዘመናዊ ከለሮች */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --bg-light: #f8f9fa;
+            --text-dark: #333333;
+            --text-light: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header እና Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        /* Hero Section (ዋናው መግቢያ) */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--text-light);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+
+        /* የክፍሎች አቀማመጥ (Sections) */
+        .container {
+            padding: 30px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            background: var(--text-light);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        section h3 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        /* የክህሎት ዝርዝር (Skills List) */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .skill-item {
+            background-color: var(--bg-light);
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        /* የፕሮጀክቶች ዝርዝር (Projects) */
+        .project-card {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .project-card:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .project-title {
+            font-weight: bold;
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        /* ፎርምና መገናኛ (Contact) */
+        .contact-info {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--text-light);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Girmachew Mulugeta</h1>
+        <p>History Student | Content Creator | Football Coach</p>
+    </header>
+
+    <div class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Sharing history, preserving heritage, inspiring communities, and coaching the next generation.</p>
+    </div>
+
+    <div class="container">
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h3>About Me</h3>
+            <p>I am a dedicated History student and community advocate passionate about heritage preservation, education, and sports. Through social media, I actively share educational and historical content aimed at raising social awareness and inspiring the youth. I am also deeply committed to cultivating a strong reading culture within the community and sharing my love for sports as a football coach.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h3>My Core Focus & Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-item">Historical Research</div>
+                <div class="skill-item">Heritage Preservation</div>
+                <div class="skill-item">Content Creation</div>
+                <div class="skill-item">Football Coaching</div>
+                <div class="skill-item">Community Leadership</div>
+                <div class="skill-item">Public Awareness</div>
+            </div>
+        </section>
+
+        <!-- Experience / Projects Section -->
+        <section id="projects">
+            <h3>What I Do</h3>
+            
+            <div class="project-card">
+                <p class="project-title">📚 Educational Content & Social Media Awareness</p>
+                <p>Writing and sharing insightful articles focused on history and social issues to educate and motivate the community.</p>
+            </div>
+
+            <div class="project-card">
+                <p class="project-title">🏛️ Heritage Preservation Initiatives</p>
+                <p>Advocating for the protection and value of historical sites and cultural heritages to keep our history alive.</p>
+            </div>
+
+            <div class="project-card">
+                <p class="project-title">⚽ Football Coaching & Youth Mentorship</p>
+                <p>Teaching tactical and teamwork football skills while mentoring young athletes to build character on and off the field.</p>
+            </div>
+
+            <div class="project-card">
+                <p class="project-title">📖 Promoting Reading Culture</p>
+                <p>Actively participating in and supporting community library projects to increase book accessibility and foster a habit of reading.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h3>Get In Touch</h3>
+            <p>If you would like to collaborate on community projects, historical discussions, or sports initiatives, feel free to reach out!</p>
+            <div class="contact-info">
+                <!-- እዚህ ጋር የራስህን ኢሜይል በ girmachew@example.com ቦታ መተካት ትችላለህ -->
+                <a href="mailto:girmachew@example.com" class="btn">Email Me</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Girmachew Mulugeta. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
